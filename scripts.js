@@ -23,11 +23,11 @@ function onPlayerReady() {
 function onPlayerStateChange(event) {
 	if(event.data === YT.PlayerState.PLAYING) { 
         duration = player.getDuration();
-	    timer = setInterval(getProgress,1000);
+	timer = setInterval(getProgress,1000);
     } else {
         // Clear timer if video is paused, ended
-		clearInterval(timer);
-	}
+	clearInterval(timer);
+    }
 }
 
 // Calculate and show progress 
