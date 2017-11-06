@@ -34,4 +34,6 @@ function onPlayerStateChange(event) {
 function getProgress(){
     progress = Math.round(player.getCurrentTime() / duration * 100);
     progress_field.innerHTML = progress + "%";
+    // More info? :)
+    // video_id = player.getVideoUrl().replace("https://www.youtube.com/watch?v=", "");
 }
