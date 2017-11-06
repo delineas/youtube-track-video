@@ -21,7 +21,7 @@ function onPlayerReady() {
 
 // Player State Change Listener
 function onPlayerStateChange(event) {
-	if(event.data === YT.PlayerState.PLAYING) { 
+    if(event.data === YT.PlayerState.PLAYING) { 
         duration = player.getDuration();
 	timer = setInterval(getProgress,1000);
     } else {
